@@ -15,7 +15,7 @@
 * Add/create the files you want with the **optimized size images** (use any online image size optimizer) and begin with your code.
 * Commit your changes and push your code by making a pull request.
 * Deploy your code on Github pages, netlify, or any other web hosting solution.
-* You must complete this task before 14 Aug at 12 am IST.
+* You must complete this task before 10 Aug at 12 am IST.
 * Judging criteria will be your custom animation, bug-free, optimized code, with no commits made after the deadline has reached. The work's uniqueness will also be appreciated; feel free to add a custom scrollbar, custom cursor, preloader, etc, to stand out from others.
   
 ## Scoring
