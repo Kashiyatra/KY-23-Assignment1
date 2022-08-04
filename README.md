@@ -5,7 +5,7 @@
 * It will be a great addition if the slides of carousal automatically move every 5 seconds.
 * Create three sections each of 100vh (100% of the screen height), and this carousel goes to the **second section of your webpage**.
 * Feel free to use swiper.js if you want; just make sure your **custom animation** is appealing (a glitch effect will be nicer, but feel free to animate it the way you want).
-* You check out the assignment i made last year [image gallery](https://github.com/rohanb202/KY-frontend-assignment1).
+* You can check out the assignment i made last year [image gallery](https://github.com/rohanb202/KY-frontend-assignment1).
 * Take inspiration from sources like dribbble, youtube, or even codepen, but try to create your own work, so you learn something from it.[example](https://dribbble.com/shots/15374169-Layout-010-Kombu-Artwork-Gallery).
 * Once started with the work, fill essential details in the form that we'll be sharing with you soon and submit your work on time, as I'll begin checking your code right after the deadline has reached, so you must not make any commits after submission time.
 
