@@ -17,6 +17,7 @@
 * Deploy your code on Github pages, netlify, or any other web hosting solution.
 * You must complete this task before 10 Aug at 11:59 pm IST.
 * Judging criteria will be your custom animation, bug-free, optimized code, with no commits made after the deadline has reached. The work's uniqueness will also be appreciated; feel free to add a custom scrollbar, custom cursor, preloader, etc, to stand out from others.
+* You should give the Github Link and the Deployed Link in the form given here :- [https://forms.gle/ibQHHLH74g2JQfXJ7](https://forms.gle/ibQHHLH74g2JQfXJ7)
   
 ## Scoring
 * The task has a total of 100 points. Completion of all the listed points in to-do gives you a maximum of 80 points.
