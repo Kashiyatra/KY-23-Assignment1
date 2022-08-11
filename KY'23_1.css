@@ -1,0 +1,553 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  .hello {
+    position: absolute;
+    font-size: 18vw;
+    top:170px;
+    left:420px;
+    transform:translate(-50%,-50%);
+    
+    
+
+    -webkit-animation-name: wave;
+            animation-name: wave;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+        font-family: sans-serif;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(182, 211,209);
+  }
+
+  .mouse{
+    top:30%;
+    left:60%;
+    
+    transform:rotateX(-10deg) rotateY(3deg) rotateZ(-25deg);
+    
+  }
+
+  
+  .hello:nth-of-type(1) {
+    
+    -webkit-animation-duration: 2.25s;
+            animation-duration: 2.25s;
+    -webkit-animation-delay: 0.55s;
+            animation-delay: 0.55s;
+  }
+  
+  .hello:nth-of-type(2) {
+    -webkit-animation-duration: 2.25s;
+            animation-duration: 2.25s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  
+  .hello:nth-of-type(3) {
+    -webkit-animation-duration: 2.25s;
+            animation-duration: 2.25s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
+  }
+  
+  .hello:nth-of-type(4) {
+    -webkit-animation-duration: 2.25;
+            animation-duration: 2.25s;
+    -webkit-animation-delay: -0.2s;
+            animation-delay: -0.2s;
+  }
+  .hello:nth-of-type(5) {
+    -webkit-animation-duration: 2.25s;
+            animation-duration: 2.25s;
+    -webkit-animation-delay: -0.45s;
+            animation-delay: -0.45s;
+  }
+
+
+  
+  @-webkit-keyframes wave {
+    40%, 50% {
+      transform: translate(-50%, -65%) scale(0.51);
+    }
+    0%, 90%, 100% {
+      transform: translate(-50%, -45%) scale(0.47);
+    }
+  }
+  
+  @keyframes wave {
+    40%, 50% {
+      transform: translate(-50%, -65%) scale(0.51);
+    }
+    0%, 90%, 100% {
+      transform: translate(-50%, -45%) scale(0.47);
+    }
+  }
+
+  html {
+    background: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBsYWluJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+  }
+  
+  .wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-perspective: 2500px;
+    perspective: 5000px;
+    -webkit-perspective-origin: 100% 50%;
+    perspective-origin: 100% 50%;
+  }
+  
+  
+  
+  .wrap .list {
+    width: 80%;
+    height: 150vh;
+    overflow-x: hidden;
+    webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+    transform: rotateX(39deg) rotateY(-5deg) rotateZ(60deg);
+    margin: 0 0 0 150px;
+    padding: 0px 0px 0px 0;
+    scrollbar-width: none;
+  }
+  .wrap .list::-webkit-scrollbar {
+    display: none;
+  }
+  .wrap .list::-webkit-scrollbar {
+    display: none;
+  }
+  .wrap .list::-webkit-scrollbar {
+    display: block;
+  }
+  .wrap .list .item {
+
+    width: 30%;
+    height: 400px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+  }
+  .wrap .list .item::after {
+    content: '';
+    position: relative;
+    z-index: 150;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3960c8e1-d90e-4e60-8522-816b41b93892/d84vq6v-5985a860-c6c3-453c-a0ae-e80e5e5abf06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM5NjBjOGUxLWQ5MGUtNGU2MC04NTIyLTgxNmI0MWI5Mzg5MlwvZDg0dnE2di01OTg1YTg2MC1jNmMzLTQ1M2MtYTBhZS1lODBlNWU1YWJmMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G2ljZtN3fPs4NhvF-fCGxl_97BA4w8kvt_qGyJH1RNI");
+    opacity: 0.15;
+  }
+  .wrap .list .item .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 2px 2px 45px 0 rgb(18, 18, 18);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    z-index: 10;
+    position: relative;
+    opacity: 0.91;
+    transition-duration: 0.15s;
+  }
+  .wrap .list .item .img:hover{
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 3px 3px 50px 0 rgb(0, 0, 0);
+    transition-duration: 0.15s;
+  }
+
+
+
+  @media only screen and (max-width: 1500px) {
+    
+    .hello {
+  
+      position: absolute;
+      font-size: 20vw;
+      top:170px;
+      left:390px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: rgb(167, 220, 222);
+    }
+
+    .mouse{
+      transform:rotateX(-10deg) rotateY(3deg) rotateZ(-25deg);
+
+    }
+
+
+    .wrap .list {
+      width: 85%;
+      height: 150vh;
+      overflow-x: hidden;
+      webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+      transform: rotateX(39deg) rotateY(-5deg) rotateZ(60deg);
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+    }
+  }
+
+  @media only screen and (max-width: 1270px) {
+    
+    .hello {
+  
+      position: absolute;
+      font-size: 20vw;
+      top:150px;
+      left:380px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(146, 240, 243);
+    }
+
+
+    .wrap .list {
+      width: 95%;
+      height: 165vh;
+      overflow-x: hidden;
+      webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+      transform: rotateX(39deg) rotateY(-5deg) rotateZ(60deg);
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+    }
+  }
+
+
+
+
+
+
+
+  @media only screen and (max-width: 1120px) {
+    
+    .hello {
+  
+      position: absolute;
+      font-size: 20vw;
+      top:180px;
+      left:340px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(146, 240, 243);
+    }
+
+
+    .wrap .list {
+      width: 100%;
+      height: 150vh;
+      overflow-x: hidden;
+      webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+      transform: rotateX(39deg) rotateY(-5deg) rotateZ(60deg);
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    
+    .hello {
+      position: absolute;
+      font-size: 20vw;
+      top:200px;
+      left:280px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(146, 240, 243);
+    }
+
+
+    .wrap .list {
+      width: 100%;
+      height: 150vh;
+      overflow-x: hidden;
+      webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+      transform: rotateX(39deg) rotateY(-5deg) rotateZ(60deg);
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+    }
+  }
+
+
+
+
+
+
+
+  @media only screen and (max-width: 750px) {
+    
+    .hello {
+      position: absolute;
+      font-size: 22vw;
+      top:190px;
+      left:230px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(146, 240, 243);
+    }
+
+
+    .wrap .list {
+      width: 120%;
+      height: 145vh;
+      overflow-x: hidden;
+      webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+      transform: rotateX(39deg) rotateY(-5deg) rotateZ(60deg);
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    .hello {
+      position: absolute;
+      font-size: 23vw;
+      top:250px;
+      left:140px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(146, 240, 243);
+    }
+
+
+    .wrap .list {
+      width: 130%;
+      height: 130vh;
+      overflow-x: hidden;
+      webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+      transform: rotateX(39deg) rotateY(-5deg) rotateZ(60deg);
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 500px) {
+    
+    .hello {
+      position: absolute;
+      font-size: 25vw;
+      top:250px;
+      left:120px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(146, 240, 243);
+    }
+
+
+    .wrap .list {
+      width: 150%;
+      height: 130vh;
+      overflow-x: hidden;
+      webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+      transform: rotateX(39deg) rotateY(-5deg) rotateZ(60deg);
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 450px) {
+    
+    .hello {
+      position: absolute;
+      font-size: 25vw;
+      top:190px;
+      left:120px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(146, 240, 243);
+    }
+
+
+    .wrap .list {
+      width: 170%;
+      height: 120vh;
+      overflow-x: hidden;
+      webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+      transform: rotateX(30deg) rotateY(-5deg) rotateZ(60deg);
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    
+    .hello {
+      position: absolute;
+      font-size: 26vw;
+      top:190px;
+      left:95px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(146, 240, 243);
+    }
+
+    
+
+    .wrap .list {
+      width: 170%;
+      height: 115vh;
+      overflow-x: hidden;
+      -webkit-transform:  rotateX(35deg) rotateY(-5deg) rotateZ(60deg);
+      
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+      bottom:30%;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    
+    .hello {
+      position: absolute;
+      font-size: 24vw;
+      top:170px;
+      left:45px;
+      transform:translate(-50%,-50%);
+      display: block;
+      
+  
+      -webkit-animation-name: wave;
+              animation-name: wave;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+              font-family: sans-serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(146, 240, 243);
+    }
+
+    
+
+    .wrap .list {
+      width: 190%;
+      height: 115vh;
+      overflow-x: hidden;
+      -webkit-transform:  rotateX(35deg) rotateY(-5deg) rotateZ(60deg);
+      
+      margin: 0 0 0 150px;
+      padding: 0px 0px 0px 0;
+      scrollbar-width: none;
+      bottom:30%;
+    }
+  }
+
+  
